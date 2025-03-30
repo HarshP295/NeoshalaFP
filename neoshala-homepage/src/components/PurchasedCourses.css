@@ -1,0 +1,129 @@
+.purchased-courses-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: #3b4fe4;
+    text-align: left;
+    font-weight: 600;
+  }
+  
+  .courses-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .purchased-course-card {
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    align-items: center;
+  }
+  
+  .purchased-course-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .course-image-container {
+    width: 80px;
+    height: 80px;
+    margin-right: 25px;
+    flex-shrink: 0;
+  }
+  
+  .course-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+    border: 2px solid #f0f0f0;
+  }
+  
+  .course-details {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 20px;
+  }
+  
+  .course-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+    min-width: 200px;
+  }
+  
+  .detail-row {
+    display: flex;
+    justify-content:left;
+  }
+  
+  .detail-label {
+    font-weight: 600;
+    color: #3b4fe4;
+    margin-right: 8px;
+    font-size: 0.9rem;
+  }
+  
+  .detail-value {
+    color: #333;
+    font-size: 0.9rem;
+  }
+  
+  .access-btn {
+    background-color: #3b4fe4;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .access-btn:hover {
+    background-color: #2a3bc7;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .purchased-course-card {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .course-image-container {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+    
+    .course-details {
+      grid-template-columns: 1fr;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    
+    .course-meta {
+      margin-left: 0;
+      width: 100%;
+      align-items: flex-start;
+    }
+    
+    .access-btn {
+      width: 100%;
+      padding: 10px;
+    }
+  }

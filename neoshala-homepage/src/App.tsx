@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import './App.css';
 import CourseCards from './components/CourseCards';
 import SignUp from './components/SignUp';
+import PurchasedCourses from './components/purchasedCourses';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <SignUp />
       <CourseCards />
       <ContactForm />
+      <PurchasedCourses />
       <Footer />
     </div>
   );
