@@ -7,6 +7,7 @@ import Reviews from './components/Reviews';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 import './App.css';
+import CourseCards from './components/CourseCards';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Header />
       <AboutUs />
       <Reviews />
+      <CourseCards />
       <ContactForm />
       <Footer />
     </div>

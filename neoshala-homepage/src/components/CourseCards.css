@@ -1,0 +1,158 @@
+:root {
+    --peach-bg: #F3D8C7;
+    --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --text-color: #333;
+    --light-gray: #f5f5f5;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .courses-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .course-card {
+    background-color: var(--peach-bg);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .favorite-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.2s ease;
+  }
+  
+  .favorite-btn:hover {
+    color: #ff4757;
+  }
+  
+  .course-image-container {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px auto 20px;
+  }
+  
+  .course-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1.5px solid black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .course-details {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  
+  .course-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-color);
+  }
+  
+  .trainer-name,
+  .duration,
+  .timing,
+  .pricing {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    color: #555;
+  }
+  
+  .course-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: auto;
+  }
+  
+  .rating {
+    display: flex;
+  }
+  
+  .star {
+    color: black;
+    font-size: 1rem;
+    margin-right: 2px;
+  }
+  
+  .star.filled {
+    color: black;
+  }
+  
+  .add-to-cart {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .add-to-cart:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .courses-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .courses-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .courses-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .courses-section {
+    background-color: white;
+    padding: 4rem 1rem;
+  }
+  
+  .courses-container {
+    /* already defined */
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
