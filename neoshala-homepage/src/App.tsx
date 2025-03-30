@@ -2,7 +2,7 @@ import React from 'react';
 // import 'swiper/css';
 // import 'swiper/css/navigation';
 import Header from './components/Header';
-import Hero from './components/Hero';
+import AboutUs from './components/AboutUs';
 import Reviews from './components/Reviews';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
@@ -12,7 +12,7 @@ const App = () => {
   return (
     <div className="app">
       <Header />
-      <Hero />
+      <AboutUs />
       <Reviews />
       <ContactForm />
       <Footer />

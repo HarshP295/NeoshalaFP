@@ -6,7 +6,7 @@ const Header = () => (
     <div className="logo">NeoShala</div>
     <nav className="nav">
       <a href=".nav">Home</a>
-      <a href="#hero">About us</a>
+      <a href="#aboutUs">About us</a>
       <a href="#reviews">Reviews</a>
       <a href="#contact">Contact Us</a>
       <button className="btn sign-in">Sign In</button>

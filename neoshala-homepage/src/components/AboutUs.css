@@ -1,0 +1,48 @@
+.about-section {
+  width: 100vw;
+  background-color: #EFE5DC;
+  padding: 4rem 0;
+}
+
+.about-wrapper {
+  background-color: #bfb3a8;
+  padding: 3rem 5rem;
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+
+.about-wrapper h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.highlight {
+  color: #EFE5DC;
+}
+
+.about-wrapper p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  font-weight: 300;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-wrapper {
+    padding: 2rem;
+    border-radius: 0;
+  }
+
+  .about-wrapper h2 {
+    font-size: 2rem;
+  }
+
+  .about-wrapper p {
+    font-size: 1rem;
+  }
+}
