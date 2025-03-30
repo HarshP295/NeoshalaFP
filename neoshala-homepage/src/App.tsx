@@ -8,6 +8,7 @@ import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 import './App.css';
 import CourseCards from './components/CourseCards';
+import SignUp from './components/SignUp';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Header />
       <AboutUs />
       <Reviews />
+      <SignUp />
       <CourseCards />
       <ContactForm />
       <Footer />

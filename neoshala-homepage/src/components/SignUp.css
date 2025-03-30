@@ -1,0 +1,101 @@
+.signup-container {
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem; /* reduced from 2rem */
+}
+
+.signup-box {
+  background-color: #fdfdfd;
+  border: 1.5px solid #ccc;
+  border-radius: 16px;
+  padding: 1.5rem 1.5rem; /* reduced top/bottom from 2rem */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  max-width: 550px;
+  width: 100%;
+}
+
+.signup-title {
+  color: #3b4fe4;
+  font-size: 1.3rem; /* reduced from 1.5rem */
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+  line-height: 1.2; /* tighter spacing */
+}
+
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.signup-form input,
+.signup-form select {
+  padding: 0.6rem 1rem;
+  border-radius: 20px;
+  border: 2px solid #3b4fe4;
+  font-size: 0.95rem;
+  line-height: 1.2;
+  color: #333;
+  background-color: #f9f9f9;
+  width: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.signup-form select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='10' viewBox='0 0 14 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L7 9L13 1' stroke='%233b4fe4' stroke-width='2'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1rem;
+}
+
+.signup-form button {
+  background-color: #3b4fe4;
+  color: white;
+  font-weight: bold;
+  padding: 0.9rem;
+  border-radius: 20px;
+  border: none;
+  font-size: 1rem;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-form button:hover:enabled {
+  background-color: #2f3ed6;
+}
+
+.signup-form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  color: #666;
+}
+
+.form-label {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.3rem;
+  color: #333;
+  font-size: 0.95rem; /* slightly smaller */
+  line-height: 1.2;
+  margin-bottom: 0.2rem; /* reduced vertical spacing */
+}
+
+.required-star {
+  color: red;
+  margin-left: 2px;
+}
+
+.error {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+  display: block;
+}
