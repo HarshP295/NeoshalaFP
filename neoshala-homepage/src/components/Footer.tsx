@@ -2,7 +2,7 @@ import React from 'react';
 import './Footer.css';
 
 const Footer = () => (
-  <footer className="footer">
+  <footer id = "footer" className="footer">
     <div className="logo">NeoShala</div>
     <div>Copyright. All Rights Reserved</div>
     {/* <div className="links">

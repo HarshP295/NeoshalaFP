@@ -3,7 +3,7 @@ import './Hero.css';
 import heroImage from '/coaching.jpg';
 
 const Hero = () => (
-  <section className="hero">
+  <section id = "hero" className="hero">
     { <img src={heroImage} alt="hero" className="hero-img" /> }
     <div className="hero-text">
       <h1>What is NeoShala?</h1>
